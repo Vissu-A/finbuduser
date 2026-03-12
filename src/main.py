@@ -1,3 +1,7 @@
+'''
+Main module for the personal finance API.
+'''
+
 from fastapi import FastAPI
 
 app = FastAPI(
