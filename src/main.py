@@ -15,4 +15,9 @@ app = FastAPI(
 
 @app.get("/")
 def home():
+    '''
+    Home endpoint for the API.
+    Returns:
+        dict: A welcome message.
+    '''
     return {"message": "Welcome to the personal finance API!"}

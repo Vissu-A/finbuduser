@@ -1,6 +1,11 @@
 name: Pylint
 
-on: [push]
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened]
+    branches: [main]
 
 jobs:
   code-linting-checks:
