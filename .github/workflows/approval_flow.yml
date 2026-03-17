@@ -1,4 +1,4 @@
-name: Pull Request Approval Flow
+name: Labeling the PR on approval
 on: pull_request_review
 
 jobs:
