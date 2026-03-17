@@ -1,0 +1,14 @@
+name: Pull Request Approval Flow
+on: pull_request_review
+
+jobs:
+
+    label_pr_on_approval:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Add approved label when approved"
+            uses: realstealthninja/label-when-approved@main
+            env:
+                APPROVALS: "1"
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                ADD_LABEL: "APPROVED"
