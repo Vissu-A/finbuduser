@@ -20,4 +20,4 @@ def home():
     Returns:
         dict: A welcome message.
     '''
-    return {"message": "Welcome to the personal finance API!"}
+    return {"message": "Welcome to the personal financing API!"}
