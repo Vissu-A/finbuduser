@@ -24,7 +24,7 @@ class MyUser(Base):
     # Defining table name for the model in the database.
     __tablename__ = "users" # Table is created with given name in database.
 
-    # 1. Definfing state of the model by creating attributes/fields.
+    # 1. Defining state of the model by creating attributes/fields.
 
     # Fields: AII(Account Identification Information): Required
     uid = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
