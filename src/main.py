@@ -2,7 +2,13 @@
 Main module for the personal finance API.
 '''
 
+# standard imports
 from fastapi import FastAPI
+
+# third-party imports
+
+# internal imports
+from src.routers.v1.user_router import router as u_router
 
 app = FastAPI(
     title="FinBud",
@@ -13,11 +19,5 @@ app = FastAPI(
     license_info={}
 )
 
-@app.get("/")
-def home():
-    '''
-    Home endpoint for the API.
-    Returns:
-        dict: A welcome message.
-    '''
-    return {"message": "Welcome to the personal financing API!"}
+# including user routers defined in routers module
+app.include_router(u_router)
