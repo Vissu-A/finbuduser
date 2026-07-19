@@ -1,0 +1,16 @@
+# Field validators
+
+# Model validators
+    There are 2 modes in model validator.
+    1. after
+    2. before
+
+    # mode="after" -> means this validation function will run after the model is fully built/instantiated.
+    # raw input data is assigned to the respective fields in the model, and all field validators have been executed.
+    # All field validators are executed, which means all fields are validated and assigned values.
+    # This allows us to perform validations, that depend on multiple fields or all the fields of the model.
+
+
+    # mode="before" -> means this validation function will run before the model is built/instantiated.
+    # This means that this validation function will run on raw input data before any field validators are executed, and before any values are assigned to the fields.
+    # This allows us to perform validations/transformations on the raw input data before the model is created, which can be useful for tasks like data cleaning.

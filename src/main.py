@@ -2,7 +2,9 @@
 Main module for the personal finance API.
 '''
 
-# standard imports
+# standard python imports
+
+# fast api imports
 from fastapi import FastAPI
 
 # third-party imports

@@ -1,0 +1,25 @@
+Explain Path, Query and Body Parameters?
+========================================
+    
+    1. Path Parameters:
+    -------------------
+    Path parameters are part of the url, they will be declared in the route path by using curly braces "{}".
+
+    Path parameters are used to point to a specific and unique item. Let assume we have a user database.
+    We want to know/get the details of a specific user who's id is 152.
+
+    Get request url = https://localhost:8000/user/152/profile
+
+    Now, we should have route path defined to handle the values in request url.
+
+    Route path = "/user/{uid}/profile".
+
+    The variable which is enclosed with flower braces is called Path Parameter.
+
+    Now, in order to pass the path parameter value to our route function, we have to deinfe
+    a function argument with the same name as used in the route path
+
+    def get_user_profile(uid: int):
+        # lmplementation logic
+    
+    
